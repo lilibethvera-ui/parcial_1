@@ -20,9 +20,7 @@ function calcularRiesgo(){
     } else if (edad >= 35){
         puntos +=1;
     }
-/**
- * 100
- */
+
     if (presion >= 140 ) {
         puntos +=3;
     } else if (presion >= 120) {
