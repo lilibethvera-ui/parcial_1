@@ -60,7 +60,6 @@ input, select{
     padding: 10px;
     border: none;
     border-radius: 15px;
-    /* font-size: 0.8rem; */
     outline: none;
     background-color: var(--fondo);
     color: var(--color-texto);
