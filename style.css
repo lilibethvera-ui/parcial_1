@@ -1,0 +1,118 @@
+/* Estilo neomorphismo */
+/* Lilibeth Vera Ramirez */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --tipografia: 'Outfit', sans-serif;
+    --fondo: #e0e5ec;
+    --sombra-clara: #ffff;
+    --sombra-oscura: #a3b1c6;
+    --color-texto: black;
+
+}
+
+body{
+    font-family: var(--tipografia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--fondo);
+    color: var(--color-texto);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 460px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--fondo);
+    box-shadow: 9px 9px 16px var(--sombra-oscura), 
+              -9px -9px 16px var(--sombra-clara);
+}
+
+h1, h2{
+    font-size: 1.2rem;
+}
+
+.subtitulo{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    /* font-size: 0.8rem; */
+    outline: none;
+    background-color: var(--fondo);
+    color: var(--color-texto);
+    box-shadow: inset 4px 4px 8px var(--sombra-oscura), 
+              inset -4px -4px 8px var(--sombra-clara);
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--fondo);
+    box-shadow: 6px 6px 12px var(--sombra-oscura), 
+              -6px -6px 12px var(--sombra-clara);
+    transition: all 0.2s ease;
+}
+
+button:active {
+  box-shadow: inset 4px 4px 8px var(--sombra-oscura), 
+              inset -4px -4px 8px var(--sombra-clara);
+  transform: scale(0.9);
+}
+
+.campo{
+    margin-bottom: 10px;
+    /* margin-left: 20px; */
+    align-items: center;
+}
+
+.resultado{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px var(--sombra-oscura), 
+              inset -2px -2px 5px var(--sombra-clara);
+}
+
+#nivelRiesgo{
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+#recomendaciones{
+    text-align: left;
+    font-size: 0.8rem;
+    padding-left: 20px;
+}
